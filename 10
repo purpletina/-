@@ -1,0 +1,23 @@
+def n2d(num, n):  
+    num = str(num)  
+    l = len(num)  
+    result = 0  
+    for i in range(l, 0, -1):  
+        result += (n**(i-1))*int(num[l-i])  
+    return result  
+def d2n(num, n):  
+    num = int(num)  
+    result = ""  
+    while True:  
+        result = str(num%n) + result  
+        num = num // n  
+        if num < n:  
+            result = str(num) + result  
+            break  
+    return int(result)  
+while True:  
+    n, n1, n2 = input().split(",")  
+    n = int(n)  
+    n1 = int(n1)  
+    n2 = int(n2)  
+    print(d2n(n2d(n1, n) + n2d(n2, n), n))  
