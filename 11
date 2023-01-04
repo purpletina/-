@@ -1,0 +1,7 @@
+while True:  
+    w, h, min_w, min_h = map(int, input().split())  
+    a = w//min_w  
+    b = h//min_h  
+    c = w/a  
+    d = h/b  
+    print(round(c, 3), round(d, 3))
