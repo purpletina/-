@@ -1,0 +1,15 @@
+while True:  
+    num = list(map(int, input().split()))  
+    a = 0  
+    while(num!= []):  
+        try:  
+            temp = max(num)  
+            num.remove(temp)  
+            temp = max(num)  
+            a+=temp  
+            num.remove(temp)  
+            temp = min(num)  
+            num.remove(temp)  
+        except:  
+            temp = 0  
+    print(a)  
