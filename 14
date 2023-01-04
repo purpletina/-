@@ -1,0 +1,12 @@
+import math  
+while True:  
+    num = list(map(int,input().split()))  
+    list1 = []  
+    for i in range(0, len(num), 1):  
+        if num[i]>1:  
+            for j in range(2,int(math.sqrt(num[i])+1)):  
+                if(num[i]%j)==0:  
+                    break  
+            else:  
+                list1.append(num[i])  
+    print(len(list1))
