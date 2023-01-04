@@ -1,3 +1,4 @@
+//請撰寫一個程式，令使用者可以輸入三個整數(int)型態的數值s, e及 d，並輸出由s至e中每相隔d的整數總和。
 while True:    
     s,e,d =input().split()    
     s = int(s)    
