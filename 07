@@ -1,0 +1,15 @@
+t = int(input())  
+for i in range(t):  
+    length = list(map(int, input().split(",")))  
+    s1 = 0  
+    s2 = 0  
+    for j in range(0, len(length),3):  
+        a = length[j]  
+        b = length[j+1]  
+        c = length[j+2]  
+        if a+b>c and a+c>b and b+c>a:  
+            s1 += 1  
+        else:  
+            s2 += 1  
+              
+    print(s1,",", s2,sep="")  
