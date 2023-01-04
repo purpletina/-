@@ -1,0 +1,10 @@
+while True:  
+    n, money = map(int,input().split())  
+    list1 = []  
+    for i in range(n):  
+        x, y = list(map(int,input().split()))  
+        a = y/x  
+        b = money/a  
+        list1.append(b)  
+    c = max(list1)  
+    print(int(c))
