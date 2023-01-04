@@ -1,0 +1,6 @@
+while True:  
+    y = list(input().split(','))  
+    for i in y:  
+        str1 = i  
+        num = ''.join([x for x in str1 if x.isdigit()])  
+        print(num) 
